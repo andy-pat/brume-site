@@ -5,6 +5,14 @@
   </div>
   <router-view />
 </template>
+<script>
+import db from "./db/db.js";
+export default {
+  mounted() {
+    console.log(db.collection("events"));
+  },
+};
+</script>
 
 <style>
 #app {
